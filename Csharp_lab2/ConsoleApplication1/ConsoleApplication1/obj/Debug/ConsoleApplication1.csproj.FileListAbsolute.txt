@@ -1,0 +1,6 @@
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Мови програмування\4 s\C#\lab2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
