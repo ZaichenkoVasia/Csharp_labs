@@ -1,4 +1,4 @@
-﻿//Клас реалізує колекцію обєктів та події
+//Клас реалізує колекцію обєктів та події
 
 using System;
 using System.Collections.Generic;
@@ -68,6 +68,23 @@ namespace ConsoleApplication1
 
             eventChange();
         }
+        
+        public void ChangeTriangle(int index, double a)
+        {
+            int iter = 0;
+            foreach (Triangle element in figures)
+            {
+                if (iter == index)
+                {
+                    element.A = a;
+                    element.B = a;
+                    element.Calculate();
+                    break;
+                }
+            }
+
+            eventChange();
+        }
 
         public double SumSquere()
         {
@@ -89,7 +106,7 @@ namespace ConsoleApplication1
                 temp_b = element.B;
                 temp_angle = element.Angle;
                 if(element is Equilateral)
-                    copy.Add(new Equilateral(temp_a, temp_b, temp_angle));
+                    copy.Add(new Equilateral(temp_a));
                 else if(element is Isosceles)
                     copy.Add(new Isosceles(temp_a, temp_b, temp_angle));
                 else
