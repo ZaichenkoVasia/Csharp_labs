@@ -1,4 +1,4 @@
-﻿//Дочірний клас від Triangle, який реалізує рівностороній трикутник
+//Дочірний клас від Triangle, який реалізує рівностороній трикутник
 
 using System;
 
@@ -6,13 +6,12 @@ namespace ConsoleApplication1
 {
     public class Equilateral : Triangle
     {
-        public Equilateral(double a, double b, double angle) : base(a, b, angle)
+        public Equilateral(double a) : base(a)
         {
-            if (a == b && angle == 60 && IsCorrect(a, b, angle))
+            if (IsCorrect(a))
             {
                 this.a = a;
-                this.b = b;
-                this.angle = angle;
+                b = a;
                 Calculate();
             }
             else
