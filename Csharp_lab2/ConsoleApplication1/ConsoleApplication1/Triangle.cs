@@ -1,4 +1,4 @@
-﻿//Абстрактий клас трикутника
+//Абстрактий клас трикутника
 
 using System;
 
@@ -12,6 +12,11 @@ namespace ConsoleApplication1
         protected double perimetr;
         protected double squere;
 
+        public Triangle(double a)
+        {
+            angle = 60;
+        }
+        
         public Triangle(double a, double b, double angle)
         {
         }
@@ -53,6 +58,10 @@ namespace ConsoleApplication1
         public bool IsCorrect(double a, double b, double angle)
         {
             return a > 0 && b > 0 && angle > 0 && angle < 180;
+        }
+        public bool IsCorrect(double a)
+        {
+            return a > 0;
         }
 
         public abstract void ToString();
