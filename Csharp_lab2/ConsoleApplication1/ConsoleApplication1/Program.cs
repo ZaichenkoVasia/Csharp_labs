@@ -1,4 +1,4 @@
-﻿//Клас реалізує 2 лабораторну роботу і тестує методи класів
+//Клас реалізує 2 лабораторну роботу і тестує методи класів
 
 using System;
 using System.Collections.Generic;
@@ -17,12 +17,13 @@ namespace ConsoleApplication1
             picture.eventChange += Handler2.Message;
             picture.eventRemove += Handler3.Message;
             
-            picture.AddTriangle(new Equilateral(7, 7, 60));
+            picture.AddTriangle(new Equilateral(7));
             picture.AddTriangle(new Isosceles(6, 6, 20));
             picture.AddTriangle(new Right(3, 4, 90));
-            picture.AddTriangle(new Equilateral(3, 3, 60));
-            picture.AddTriangle(new Equilateral(4, 4, 60));
-            picture.ChangeTriangle(0, 2, 2, 60);
+            picture.AddTriangle(new Equilateral(3));
+            picture.AddTriangle(new Equilateral(4));
+            picture.ChangeTriangle(0, 2);
+            picture.ChangeTriangle(1, 2, 2, 30);
             picture.Remove(4);
             picture.ShowInfo();
             Console.WriteLine("Sum of all squere in list: "+picture.SumSquere());
